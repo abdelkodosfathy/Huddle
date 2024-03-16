@@ -1,0 +1,157 @@
+:root{
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(322, 100%, 79%);
+  --Very-Pale-Cyan: hsl(193, 100%, 96%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Grayish-Blue: hsl(208, 11%, 55%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+}
+.hero{
+  background: url('./images/bg-hero-desktop.svg');
+  background-color: var(--Very-Pale-Cyan);
+  background-repeat: no-repeat;
+  background-size:contain;
+  height: 100vh;
+}
+button{
+  box-shadow: 0 3px 15px -10px black;
+  border: none;
+  font-weight: 700;
+}
+header button{
+  width: 170px;
+  background-color: white;
+}
+header button:hover{
+  color: var(--Grayish-Blue);
+}
+
+.hero-text{
+}
+.hero-text button{
+  width: 300px;
+  background-color: var(--Pink);
+  color: white;
+}
+.hero-text button:hover{
+  background-color: var(--Light-Pink);
+
+}
+.hero-text h1{
+  font-size: 48px;
+}
+.hero-text p{
+  font-size: 18px;
+}
+
+.my-cards{
+  padding: 200px 0;
+}
+.my-card{
+  width: 100%;
+  box-shadow: 0 0 15px -10px black;  
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+.my-card-text{
+  padding: 80px;
+  width: 50%;
+}
+.my-card h3{
+  font-weight: 600;
+}
+.my-card p{
+  color: var(--Grayish-Blue);
+}
+.my-card-img{
+  width: clamp(250px, 50%, 600px);
+}
+.my-card-img img{
+  display: inline-block;
+  width: 100%;
+}
+
+.get-start{
+  position: relative;
+  max-width: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 60px 0;
+  box-shadow: 0 3px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: -100px;
+}
+.get-start h1{
+  margin-bottom: 30px;
+}
+.get-start button{
+  width: 300px;
+  background-color: var(--Pink);
+  color: white;
+}
+.get-start button:hover{
+  background-color: var(--Light-Pink);
+}
+
+footer{
+  color: white;
+  background-color: var(--Very-Dark-Cyan);
+  flex-direction: column;
+  padding: 200px 100px 30px;
+}
+.footer-logo{
+  width: 250px;
+}
+footer .sec{
+  display: flex;
+  margin: 40px 0;
+}
+.sec1{
+  min-width: 40%;
+  width: 40%;
+}
+.info{
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+li{
+  list-style: none;
+  margin-bottom: 20px;
+  padding-right: 60px;
+}
+.sec1,.sec2,.sec3,.social {
+width: 20%;
+margin-left: 30px;
+}
+.social ul{
+  display: flex;
+}
+.social li{
+  padding: 0 10px;
+}
+
+li a{
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; 
+  width: 30px;
+  height: 30px;
+}
