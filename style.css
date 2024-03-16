@@ -18,9 +18,8 @@ body{
   background-color: var(--Very-Pale-Cyan);
   background-repeat: no-repeat;
   background-size:contain;
-  height: 100vh;
+  min-height: 100vh;
   width: clamp(500px, 100%, 100%);
-
 }
 button{
   box-shadow: 0 3px 15px -10px black;
@@ -164,4 +163,44 @@ li a:hover{
 .social a:hover{
   color: var(--Pink);
   border-color: var(--Pink);
+}
+
+@media (max-width: 1000px){
+  .hero-content{
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero-content h1{
+    margin: 50px 0;
+  }
+  .hero-content button{
+    margin: 50px auto;
+  }
+  .hero-img img{
+    width: 100%;
+  }
+  .my-card{
+    
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .my-card:nth-child(2){
+    flex-direction: column;
+  }
+  .my-card-text{
+    padding: 0;
+    width: auto;
+  }
+  .sec{
+    flex-direction: column;
+  }
+  .sec1,.sec2,.sec3{
+    width: auto;
+  }
+  .social, .social ul{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  
 }
